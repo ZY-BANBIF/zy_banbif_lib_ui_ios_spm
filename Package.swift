@@ -18,8 +18,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "zy_banbif_lib_ui_ios_spm",
-            url: "https://repo.zytrust.com/artifactory/zy-mobile-maven/spm/banbif/ui/1.0.0/zy_banbif_lib_ui_ios_spm.xcframework.zip",
-            checksum: "f507347aa94e3ce4d3fb56afedc07a7fa3f4607b8881943ef2f3fb1577897a6c"
+            url: "https://repo.zytrust.com/artifactory/zy-mobile-maven/spm/banbif/ui/1.0.1/zy_banbif_lib_ui_ios_spm.xcframework.zip",
+            checksum: "b2c429227c242c03810a11bf4cd62428c6f9bc06fc78675a4a6147114b0ab8a6"
         )
     ]
 )
