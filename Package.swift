@@ -40,14 +40,15 @@ let package = Package(
         .target(
             name: "zy_banbif_lib_ui_ios_spm_dependencies",
 
-            path: "Sources/zy_banbif_lib_ui_ios_spm_dependencies",
-
+            // Primero dependencies y después path
             dependencies: [
                 .product(
                     name: "Lottie",
                     package: "lottie-ios"
                 )
-            ]
+            ],
+
+            path: "Sources/zy_banbif_lib_ui_ios_spm_dependencies"
         )
     ]
 )
