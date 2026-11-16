@@ -36,17 +36,15 @@ let package = Package(
             checksum: "ba2aee2ce89b2432f51e5063433c0bdc48567c586fc63a2d1e14418faa29746b"
         ),
 
-        // Target auxiliar para incorporar Lottie
+        // Target auxiliar para declarar Lottie
         .target(
             name: "zy_banbif_lib_ui_ios_spm_dependencies",
-
             dependencies: [
                 .product(
                     name: "Lottie",
                     package: "lottie-ios"
                 )
             ],
-
             path: "zy_banbif_lib_ui_ios_spm_dependencies"
         )
     ]
