@@ -29,20 +29,18 @@ let package = Package(
 
     targets: [
 
-        // XCFramework principal
+        // XCFramework principal descargado desde Artifactory
         .binaryTarget(
             name: "zy_banbif_lib_ui_ios_spm",
-            url: "https://repo.zytrust.com/artifactory/zy-mobile-maven/spm/banbif/ui/1.0.13/zy_banbif_lib_ui_ios_spm.xcframework.zip",
-            checksum: "1c4e3a3e41eb9e4a04f88d4ee13b196feb867fa18c28a1f69528a232c25172c9"
+            url: "https://repo.zytrust.com/artifactory/zy-mobile-maven/spm/banbif/ui/1.0.17/zy_banbif_lib_ui_ios_spm.xcframework.zip",
+            checksum: "ba2aee2ce89b2432f51e5063433c0bdc48567c586fc63a2d1e14418faa29746b"
         ),
 
-        // Target auxiliar
+        // Target auxiliar para incorporar Lottie
         .target(
             name: "zy_banbif_lib_ui_ios_spm_dependencies",
 
             dependencies: [
-                "zy_banbif_lib_ui_ios_spm",
-
                 .product(
                     name: "Lottie",
                     package: "lottie-ios"
