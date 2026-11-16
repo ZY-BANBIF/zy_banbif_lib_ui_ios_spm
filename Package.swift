@@ -1,5 +1,5 @@
 
- // swift-tools-version: 5.9
+// swift-tools-version: 5.9
 
 import PackageDescription
 
@@ -29,16 +29,19 @@ let package = Package(
 
     targets: [
 
-        // Librería principal distribuida como XCFramework
+        // Framework principal descargado desde Artifactory
         .binaryTarget(
             name: "zy_banbif_lib_ui_ios_spm",
-            url: "https://repo.zytrust.com/artifactory/zy-mobile-maven/spm/banbif/ui/1.0.6/zy_banbif_lib_ui_ios_spm.xcframework.zip",
-            checksum: "96e3894cdd859d9da3002239fee5002369e66805b3a45a5a2fe1c99d2e39b576"
+            url: "https://repo.zytrust.com/artifactory/zy-mobile-maven/spm/banbif/ui/1.0.11/zy_banbif_lib_ui_ios_spm.xcframework.zip",
+            checksum: "a3620c59fa49fa6b74bb85efbc13b58e9334df5b40a31e4555ae0af2a3b13a62"
         ),
 
-        // Dependencias auxiliares de la librería
+        // Target auxiliar para incluir Lottie
         .target(
             name: "zy_banbif_lib_ui_ios_spm_dependencies",
+
+            path: "Sources/zy_banbif_lib_ui_ios_spm_dependencies",
+
             dependencies: [
                 .product(
                     name: "Lottie",
