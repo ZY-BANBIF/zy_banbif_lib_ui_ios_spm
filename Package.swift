@@ -36,7 +36,7 @@ let package = Package(
             checksum: "1c4e3a3e41eb9e4a04f88d4ee13b196feb867fa18c28a1f69528a232c25172c9"
         ),
 
-        // Wrapper que conecta el XCFramework con Lottie
+        // Target auxiliar
         .target(
             name: "zy_banbif_lib_ui_ios_spm_dependencies",
 

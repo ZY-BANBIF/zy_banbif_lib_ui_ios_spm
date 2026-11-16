@@ -6,4 +6,3 @@
 //
 
 import Lottie
-import zy_banbif_lib_ui_ios_spm
